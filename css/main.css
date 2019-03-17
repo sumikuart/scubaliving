@@ -10,7 +10,7 @@
 
     display: grid;
     grid-template-columns: 1fr 1700px 1fr;
-    grid-template-rows: 70px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 1fr 2.2fr 1fr;
 }
 
 
@@ -27,7 +27,7 @@
     grid-template-rows: 1fr;
     position: sticky;
 
-    top:0;
+    top: 0;
 }
 
 #wrapper header img {
@@ -128,41 +128,150 @@
 
 #wrapper #info {
 
-    width:100%;
+    width: 100%;
 
     grid-column: 1/-1;
     grid-row: 1/3;
-    
+
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 2fr 1fr 2fr;
 }
 
-#wrapper #info img{
+#wrapper #info img {
     grid-column: 1/-1;
     grid-row: 1/-1;
-    width:100%;
+    width: 100%;
 
 }
 
 #wrapper #info #infotekstbox {
-    
+
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
 }
 
-#wrapper #info #infotekstbox p{
-padding-top:50px;
+#wrapper #info #infotekstbox p {
+    padding-top: 70px;
     font-size: 32px;
 }
 
 
-#wrapper #info #infotekstbox #infotekstboxsmall{
-    
-font-size: 18px;
+#wrapper #info #infotekstbox #infotekstboxsmall {
+    padding-top: 0px;
+    font-size: 18px;
 }
 
 
 
+/* main */
+
+
+#wrapper main {
+
+
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+    height: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+/* SHOP */
+
+#wrapper main #Shop {
+
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 5fr 1fr;
+    grid-gap: 30px;
+    margin-top: 30px;
+
+}
+
+#wrapper main #Shop #shopheadline {
+
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: flex;
+
+}
+
+
+#wrapper main #Shop #shopheadline p {
+
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 50%;
+    font-weight: bolder;
+    font-size: 24px;
+    padding: 2px;
+    padding-left: 50px;
+}
+
+#wrapper main #Shop #backlogshop {
+    height: 100%;
+    width: 50%;
+    background-color: #cccccc;
+
+}
+
+
+#wrapper main #Shop #shopcatalog {
+
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#wrapper main #Shop #shopcatalog .shopbox {
+
+    width: 20%;
+    -webkit-box-shadow: 0px 0px 42px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 42px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 42px 0px rgba(0,0,0,0.75);
+}
+
+#wrapper main #Shop #shopcatalog .shopbox img {
+
+    width: 80%;
+    margin:30px;
+
+}
+
+#wrapper main #Shop #shopcatalog .shopbox figcaption {
+    color:#a9a5a2;
+    text-align: center;
+    font-size: 26px;
+}
+
+#wrapper main #Shop #shopcatalog .shopbox figcaption span {
+    color: black;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+
+#wrapper main #Shop #shopend{
+
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    text-align: center;
+    font-size: 34px;  
+    margin-top:20px;
+
+}
